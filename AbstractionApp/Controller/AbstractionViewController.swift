@@ -8,12 +8,34 @@
 
 import UIKit
 
-class AbstractionViewController: UIPageViewController {
+public class AbstractionViewController: UIPageViewController, UIPageViewControllerDataSource
+{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+    dataSource = self
+    
+    if let firstViewController = orderedAbstractionViews.first
+    {
+       setViewControllers([firstViewController],
+                          direction: .forward,
+                          animated: true,
+                          completion: nil)
 
         // Do any additional setup after loading the view.
+    }
+    private lazy var orderedAbstractionViews : [UIViewController] =
+    {
+        return [
+            self.newAbstractionViewController(abstractionLevel: "Swift"),
+            self.newAbstractionViewCOntroller(abstractionLevel: "Block"),
+            self.newAbstractionViewCOntroller(abstractionLevel: "ByteCode"),
+            self.newAbstractionViewCOntroller(abstractionLevel: "Binary"),
+            self.newAbstractionViewCOntroller(abstractionLevel: "LogicalGate")
+        ]
+    }()
+    private func newAbstractionViewCOntroller(abstractionLevel: String) -> UIViewController
+    {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstrationLevel)ViewController")
     }
     
 
