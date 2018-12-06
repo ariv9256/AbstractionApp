@@ -12,7 +12,7 @@
 		0FACA73721B9A4F600A7CAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FACA73621B9A4F600A7CAC4 /* Assets.xcassets */; };
 		0FACA74521B9A4F600A7CAC4 /* AbstractionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA74421B9A4F600A7CAC4 /* AbstractionAppTests.swift */; };
 		0FACA75021B9A4F600A7CAC4 /* AbstractionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA74F21B9A4F600A7CAC4 /* AbstractionAppUITests.swift */; };
-		0FACA76121B9A5C500A7CAC4 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */; };
+		0FACA76421B9B46E00A7CAC4 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA76321B9B46E00A7CAC4 /* AbstractionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		0FACA74B21B9A4F600A7CAC4 /* AbstractionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FACA74F21B9A4F600A7CAC4 /* AbstractionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionAppUITests.swift; sourceTree = "<group>"; };
 		0FACA75121B9A4F600A7CAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FACA76021B9A5C500A7CAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = AbstractionApp/Base.lproj/AbstractionViewController.swift; sourceTree = SOURCE_ROOT; };
+		0FACA76321B9B46E00A7CAC4 /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		0FACA76221B9A5CA00A7CAC4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */,
+				0FACA76321B9B46E00A7CAC4 /* AbstractionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FACA73021B9A4F400A7CAC4 /* AppDelegate.swift in Sources */,
-				0FACA76121B9A5C500A7CAC4 /* AbstractionViewController.swift in Sources */,
+				0FACA76421B9B46E00A7CAC4 /* AbstractionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,14 +319,6 @@
 				0FACA73421B9A4F400A7CAC4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FACA76021B9A5C500A7CAC4 /* Base */,
-			);
-			name = AbstractionViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
