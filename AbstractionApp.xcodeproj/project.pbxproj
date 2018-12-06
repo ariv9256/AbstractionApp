@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0FACA73021B9A4F400A7CAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA72F21B9A4F400A7CAC4 /* AppDelegate.swift */; };
-		0FACA73221B9A4F400A7CAC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA73121B9A4F400A7CAC4 /* ViewController.swift */; };
 		0FACA73521B9A4F400A7CAC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACA73321B9A4F400A7CAC4 /* Main.storyboard */; };
 		0FACA73721B9A4F600A7CAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FACA73621B9A4F600A7CAC4 /* Assets.xcassets */; };
-		0FACA73A21B9A4F600A7CAC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FACA73821B9A4F600A7CAC4 /* LaunchScreen.storyboard */; };
 		0FACA74521B9A4F600A7CAC4 /* AbstractionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA74421B9A4F600A7CAC4 /* AbstractionAppTests.swift */; };
 		0FACA75021B9A4F600A7CAC4 /* AbstractionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA74F21B9A4F600A7CAC4 /* AbstractionAppUITests.swift */; };
+		0FACA76121B9A5C500A7CAC4 /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +35,8 @@
 /* Begin PBXFileReference section */
 		0FACA72C21B9A4F400A7CAC4 /* AbstractionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbstractionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FACA72F21B9A4F400A7CAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FACA73121B9A4F400A7CAC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FACA73421B9A4F400A7CAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FACA73621B9A4F600A7CAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0FACA73921B9A4F600A7CAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FACA73B21B9A4F600A7CAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FACA74021B9A4F600A7CAC4 /* AbstractionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FACA74421B9A4F600A7CAC4 /* AbstractionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionAppTests.swift; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		0FACA74B21B9A4F600A7CAC4 /* AbstractionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FACA74F21B9A4F600A7CAC4 /* AbstractionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionAppUITests.swift; sourceTree = "<group>"; };
 		0FACA75121B9A4F600A7CAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FACA76021B9A5C500A7CAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = AbstractionApp/Base.lproj/AbstractionViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +95,9 @@
 		0FACA72E21B9A4F400A7CAC4 /* AbstractionApp */ = {
 			isa = PBXGroup;
 			children = (
-				0FACA72F21B9A4F400A7CAC4 /* AppDelegate.swift */,
-				0FACA73121B9A4F400A7CAC4 /* ViewController.swift */,
-				0FACA73321B9A4F400A7CAC4 /* Main.storyboard */,
-				0FACA73621B9A4F600A7CAC4 /* Assets.xcassets */,
-				0FACA73821B9A4F600A7CAC4 /* LaunchScreen.storyboard */,
-				0FACA73B21B9A4F600A7CAC4 /* Info.plist */,
+				0FACA76221B9A5CA00A7CAC4 /* Controller */,
+				0FACA75D21B9A54600A7CAC4 /* Resources */,
+				0FACA75E21B9A57B00A7CAC4 /* View */,
 			);
 			path = AbstractionApp;
 			sourceTree = "<group>";
@@ -123,6 +118,32 @@
 				0FACA75121B9A4F600A7CAC4 /* Info.plist */,
 			);
 			path = AbstractionAppUITests;
+			sourceTree = "<group>";
+		};
+		0FACA75D21B9A54600A7CAC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FACA72F21B9A4F400A7CAC4 /* AppDelegate.swift */,
+				0FACA73621B9A4F600A7CAC4 /* Assets.xcassets */,
+				0FACA73B21B9A4F600A7CAC4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FACA75E21B9A57B00A7CAC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FACA73321B9A4F400A7CAC4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FACA76221B9A5CA00A7CAC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FACA73A21B9A4F600A7CAC4 /* LaunchScreen.storyboard in Resources */,
 				0FACA73721B9A4F600A7CAC4 /* Assets.xcassets in Resources */,
 				0FACA73521B9A4F400A7CAC4 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FACA73221B9A4F400A7CAC4 /* ViewController.swift in Sources */,
 				0FACA73021B9A4F400A7CAC4 /* AppDelegate.swift in Sources */,
+				0FACA76121B9A5C500A7CAC4 /* AbstractionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +321,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0FACA73821B9A4F600A7CAC4 /* LaunchScreen.storyboard */ = {
+		0FACA75F21B9A5C500A7CAC4 /* AbstractionViewController.swift */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0FACA73921B9A4F600A7CAC4 /* Base */,
+				0FACA76021B9A5C500A7CAC4 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = AbstractionViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AbstractionApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AbstractionApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AbstractionApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AbstractionApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
